@@ -35,7 +35,7 @@ def config_match_regex(gitrepo, configpath, host):
                 match = False
                 analysis_regex = {}
                 try:
-                    print(f"File: {file}:")
+                    print(f"\nFile: {file}:")
                     with open(os.path.join(root, file)) as target:
                                                 [analysis_regex.update({n: line})
                             for n, line in enumerate(target)
