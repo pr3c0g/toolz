@@ -126,7 +126,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("config", help="Path to config.cfg file.")
     parser.add_argument("--host", help="Hostname to be checked on site.pp and on cfg files. "
-                                       "Can be a FQDN or just hostname.")
+                                       "Has to be FQDN to match correctly.")
     parser.add_argument("--module", help="Module to find on site.pp. "
                                     "Examples: named_server, server, apache, "
                                     "webserver::apache24, ::role:webserver::apache24")
