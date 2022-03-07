@@ -1,4 +1,6 @@
-#!/usr/local/bin/bash
+#!/usr/bin/env bash
+
+source common.sh
 
 wait_for_ping() {
   trap '{ echo -e "\033[0;31mCancelled!\033[0;00m" ; exit 1; }' INT  
@@ -18,7 +20,7 @@ check_ssh(){
 }
 
 main() {
-  host="${@: -1}"
+  host="${*: -1}"
   while true; do
     wait_for_ping "$@"
     if check_ssh "$host"; then

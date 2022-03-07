@@ -9,3 +9,4 @@ Initially intended to help identify local ssh tunnel ports, that were establishe
 __rssh.sh__: bash script. A Repeating SSH until it succeeds. Initially intended to ssh until success after rebooting a system, since I grew bored of trying over and over again until sshd was running on the other side. Looked like a cool learning experience.
 
 __phelper.py__: Python3 script. Helper functions to deal with a large puppet codebase. A template config.cfg file is included in the repo, change it accordingly to your environment.
+aa
