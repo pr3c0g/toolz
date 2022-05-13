@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 
+# Ansi color codes for coloring output
+color_red="\e[31m"
+color_green="\e[32m"
+color_yellow="\e[33m"
+color_blue="\e[34m"
+color_bold="\e[1m"
+color_reset="\e[0m"
+
 # Ansi coloring functions
 print_error() {
   printf "${color_red}${color_bold}"
